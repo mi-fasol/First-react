@@ -2,6 +2,36 @@
   text-align: center;
 }
 
+body{
+  font-family: 'nanumsquare';
+}
+.black-nav{
+  background: black;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.list{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+.title{
+  font-size: 15px;
+  font-weight: 800;
+}
+.content{
+  font-size: 13px;
+}
+.modal{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #eee;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
