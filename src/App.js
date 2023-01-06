@@ -5,12 +5,19 @@ import { useState } from 'react';
 function App() {
   let [title, changeTitle] = useState(['강남 카페 추천', '성수 전시회 추천', '노원 디저트 추천']);
   let [heart, changeHeart] = useState(0)
-  let posts = '공릉 맛집';
+
   function setTitle(){
     var newList = [...title]
-    newList[0] = '여의도 식당 추천'
+    newList[0] = '여의도 산책로 추천'
     changeTitle( newList );
   }
+
+  function setBackTitle(){
+    var newList = [...title]
+    newList[0] = '강남 카페 추천'
+    changeTitle( newList );
+  }
+
 
   return (
     <div className="App">
@@ -28,6 +35,7 @@ function App() {
         <p className = 'content'>작성자: 세비어</p>
         <hr/>
         <button onClick ={setTitle}>제목 변경</button>
+        <button onClick = {setBackTitle}>원상복귀</button>
       </div>
 
       <Modal></Modal>
